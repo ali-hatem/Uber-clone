@@ -1,0 +1,188 @@
+@import url(header-footer.css); /* header and footer style */
+:root {
+  --body-bg: #0a0a0a;
+  --card-bg: #1f1f1f;
+  --section-bg: #6d6b6b;
+  --text-color: #ffff;
+  --title-color: #ffff;
+  --button-color: #a0e900;
+  
+}
+
+/* Dark Mode Variables */
+#dark-mode:checked ~ .main {
+  --body-bg: #ffff;
+  --card-bg: #6d6b6b;
+  --section-bg: #bdbdbd;
+  --text-color: rgb(0, 0, 0);
+  --button-color: #a0e900;
+}
+
+.main {
+  background: var(--body-bg);
+  color: var(--text-color);
+
+}
+
+#title{
+    color: var(--title-color);
+
+}
+html[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="en"] {
+  direction: ltr;
+  text-align: left;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* start home section  */
+
+.home {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://png.pngtree.com/thumb_back/fw800/background/20251003/pngtree-high-tech-sports-car-featuring-circuit-board-pattern-racing-through-vibrant-image_19763187.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-size: 100% 95%; */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home1 {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin-inline-start: 50px;
+  padding: 0;
+  
+}
+
+p {
+  color: #ffffff9c;
+}
+
+.home1 a {
+  text-decoration: none;
+  background-color: var(--button-color);
+  color: #0a0a0a;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block; 
+  transition: 1s;
+}
+
+#home a:hover{
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card {
+  background-color: var(--card-bg);
+  width: 21.25em;
+  box-shadow: 0 5px 30px rgba(1, 1, 1, 25%);
+  border-radius: 10px;
+  padding: 0 25px 25px;
+  margin: 15px;
+  transition: 0.6s ease;
+  text-align: center;
+  min-height: 25vh;
+}
+
+.card img{
+  width:100px;
+  margin-bottom: 10px;
+}
+.card:hover h3{
+  color: var(--button-color);
+}
+.card:hover{
+  box-shadow: 0 5px 30px rgba(160, 233, 0, 25%);
+}
+
+/* rides type section */
+.rides-type {
+  background-color: var(--card-bg);
+  width: 100%;
+  min-height: 50vh;
+  text-align: center;
+  padding: 20px 0;
+}
+/* reviews section */
+.reviews{
+  width: 100%;
+  min-height: 50vh;
+  text-align: center;
+    background-color: var(--body-bg);
+}
+
+.reviews .card p{
+  padding-top: 60px;
+}
+.user{
+  position: relative;
+}
+.user img {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.user span{
+   position: absolute;
+  left: 60px;
+  top: 33px;
+}
+.reviews .stars img{
+  width: 180px;
+}
+
+.rides-type .card{
+  background-color: var(--body-bg);
+  cursor: pointer;
+}
+ /* the map and coverage section */
+.coverage{
+  background-color: var(--card-bg);
+  width: 100%;
+  min-height: 50vh;
+  text-align: center;
+  padding: 20px 0;
+}
+.coverage iframe{
+  width:80%;
+} 
+
+/* payment methods section */
+.payment{
+  width: 100%;
+  min-height: 50vh;
+  text-align: center;
+  padding: 20px 0;
+}
+
+ @media screen and (max-width:500px) {
+  .container{
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: center;
+}
+
+}

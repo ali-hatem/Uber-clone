@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span class="ride">Uber</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="scooter.html">Scooters</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="reservation.html" class="book-btn">Book a Ride</a>
+          <a href="#" class="login" id="username2"></a>
+        </div>
+      </nav>
+    </header>
+    <div class="home" id="home">
+      <div class="home1">
+        <h1>welcome to uber</h1>
+        <p>
+          book a car or scooter in seconds. reliable drivers, <br />
+          transparent pricing, and a seamless experience every time
+        </p>
+        <a href="login.html">let's get started</a>
+      </div>
+    </div>
+    <div class="rides-type">
+      <h2>two ways to move</h2>
+      <p>whether you need four wheels or two, we've got you covered.</p>
+      <div class="container">
+        <div onclick="window.location.href='cars.html'" class="card">
+          <img src="https://mobile-content.uber.com/launch-experience/top_bar_rides_3d.png" alt="">
+          <h3>cars</h3>
+          <p>sedans, SUVs &amp; vans for every occasion</p>
+        </div>
+        <div onclick="window.location.href='scooter.html'" class="card">
+          <img src="https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/v1.1/Motorcycle.png" alt="">
+          <h3>scooters</h3>
+          <p>quick, eco-friendly city rides</p>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <h2>what users says</h2>
+      <div class="container">
+      <div class="card">
+        <p>
+          "Incredibly smooth ride. The app is so easy to use, and my driver was
+          professional and friendly."
+        </p>
+        <span>sarah k.</span>
+      </div>
+      <div class="card">
+        <p>
+          "I use the scooter service daily for my commute. Fast, affordable, and
+          always available when I need it."
+        </p>
+        <span>marcus t.</span>
+      </div>
+      <div class="card">
+        <p>
+          "Best ride-hailing service in the city. Clean vehicles, fair prices,
+          and excellent customer support."
+        </p>
+        <span>elena r.</span>
+      </div>
+      </div>
+      </div>
+    <div class="coverage">
+      <h2>we're everywhere</h2>
+      <p>available across the country, 24/7.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.624563264985!2d31.348527376176374!3d30.10493691570089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815005897870b%3A0x8310348f5975f10c!2z2KfZhNmD2YTZitipINin2YTYrdix2KjZitmHINi02KfYsdi5INi52KvZhdin2YYg2KjZhiDYudmB2KfZhiDZiNmB2LHZitivINiz2YXZitmD2Kkg2KjZiNin2KjYqSA1!5e0!3m2!1sen!2seg!4v1772371003614!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="payment">
+      <h2>easy &amp; secure payments</h2>
+      <p>multiple payment options for your convenience</p>
+      <div class="container">
+        <div class="card">
+          <!-- <i class="fa-regular fa-credit-card"></i> -->
+           <img src="images/visa.png" alt="">
+          <h3>card payments</h3>
+          <p>visa, mastercard, meeza</p>
+        </div>
+        <div class="card">
+          <img src="images/cash.png" alt="">
+          <h3>pay with cash</h3>
+          <p>pay to the driver</p>
+        </div>
+        <div class="card">
+          <img src="https://logoeps.com/wp-content/uploads/2011/05/vodafone-logo-vector.png" alt="">
+          <h3>e-wallets</h3>
+          <p>vodafone cash, fawry pay, paymob</p>
+        </div>
+      </div>
+    </div>
+    <!-- /* --------------start footer------------- */ -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <span class="logo-text">Uber</span>
+          </div>
+          <p>
+            Premium ride-hailing service. Fast, safe, and reliable
+            transportation at your fingertips.
+          </p>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook" class="social-icon">
+              <i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" aria-label="Twitter" class="social-icon">
+              <i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"
+              ><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon">
+              <i class="fa-brands fa-square-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="#">Scooters</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-support">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Safety</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>📧 uber.clone@mail.com</li>
+            <li>📞 01146783266</li>
+            <li>📍 NEW CAIRO</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 uber. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- /* ------------End---------- */ -->
+  </body>
+</html>
