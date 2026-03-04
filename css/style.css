@@ -9,14 +9,6 @@
   
 }
 
-/* Dark Mode Variables */
-#dark-mode:checked ~ .main {
-  --body-bg: #ffff;
-  --card-bg: #6d6b6b;
-  --section-bg: #bdbdbd;
-  --text-color: rgb(0, 0, 0);
-  --button-color: #a0e900;
-}
 
 .main {
   background: var(--body-bg);
@@ -184,5 +176,6 @@ p {
     flex-flow: row wrap;  
     justify-content: center;
 }
+
 
 }
